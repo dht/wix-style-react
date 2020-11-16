@@ -4,6 +4,7 @@ import defaultTo from 'lodash/defaultTo';
 import classNames from 'classnames';
 import { ScrollSync } from 'react-scroll-sync';
 
+import deprecationLog from '../utils/deprecationLog';
 import { st, classes } from './Table.st.css';
 import DataTable from './DataTable';
 import Checkbox from '../Checkbox';
@@ -135,7 +136,15 @@ export class Table extends React.Component {
       onSelectionChanged,
       hasMore,
       horizontalScroll,
+      hideHeader,
     } = this.props;
+
+    if (hideHeader) {
+      deprecationLog(
+        '<Table>\'s "hideHeader" prop is deprecated. To hide the table header, render "<Table.Content titleBarVisible={false}>" in its "children" prop',
+      );
+    }
+
     let hasUnselectables = null;
     let allIds = data.map((rowData, rowIndex) =>
       rowData.unselectable
