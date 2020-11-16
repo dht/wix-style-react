@@ -294,7 +294,7 @@ Table.propTypes = {
   isRowHighlight: PropTypes.func,
   /** Whether there are more items to be loaded. Event listeners are removed if false. */
   hasMore: PropTypes.bool,
-  /** Should we hide the header of the table. */
+  /** [deprecated] This prop has no affect. To hide the table header, render `<Table.Content titleBarVisible={false}>` in `children`. */
   hideHeader: PropTypes.bool,
   /** An id to pass to the table */
   id: PropTypes.string,
