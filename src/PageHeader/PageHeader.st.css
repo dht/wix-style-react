@@ -8,12 +8,6 @@
   -st-default: calc_rgba;
 }
 
-/* Allow flex-child to shrink when there is a truncated descendant
-See: https://css-tricks.com/flexbox-truncated-text/#article-header-id-3 */
-.truncatedFlexChild {
-  min-width: 0;
-}
-
 .root {
   display: flex;
   justify-content: flex-start;
@@ -22,7 +16,9 @@ See: https://css-tricks.com/flexbox-truncated-text/#article-header-id-3 */
 }
 
 .header {
-  -st-mixin: truncatedFlexChild;
+  /* Allow flex-child to shrink when there is a truncated descendant
+  See: https://css-tricks.com/flexbox-truncated-text/#article-header-id-3 */
+  min-width: 0;
   flex: 1;
 }
 
@@ -102,7 +98,9 @@ See: https://css-tricks.com/flexbox-truncated-text/#article-header-id-3 */
 }
 
 .titleContainer .titleColumn {
-  -st-mixin: truncatedFlexChild;
+  /* Allow flex-child to shrink when there is a truncated descendant
+  See: https://css-tricks.com/flexbox-truncated-text/#article-header-id-3 */
+  min-width: 0;
 }
 
 .titleContainer .titleColumn .title {
