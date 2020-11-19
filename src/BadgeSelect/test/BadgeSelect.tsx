@@ -1,6 +1,6 @@
 import * as React from 'react';
 import BadgeSelect  from '..';
-import BadgeSelectItem from '../../BadgeSelectItemBuilder';
+import BadgeSelectItem from '../../BadgeSelectItem';
 import { badgeSelectTestkitFactory } from '../../../testkit';
 import { badgeTestkitFactory as badgeSelectEnzymeTestkitFactory } from '../../../testkit/enzyme';
 import { mount } from 'enzyme';

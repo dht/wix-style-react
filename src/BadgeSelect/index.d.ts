@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BadgeSize, BadgeType } from '../Badge';
 import { PopoverCommonProps } from '../common';
-import BadgeSelectItem  from '../BadgeSelectItemBuilder';
+import BadgeSelectItem  from '../BadgeSelectItem';
 
 export interface BadgeSelectProps {
   options: BadgeSelectItem[];
