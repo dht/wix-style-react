@@ -3,8 +3,3 @@ export const SIZES = {
   medium: 'medium',
   large: 'large',
 };
-
-export const ALIGNMENTS = {
-  center: 'center',
-  stretch: 'stretch',
-};

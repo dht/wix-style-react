@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Content from './components/Content';
 import { Layout, Cell } from '../Layout';
 import Proportion from '../Proportion';
-import { SIZES, ALIGNMENTS } from './constants';
+import { SIZES } from './constants';
 import { st, classes } from './MarketingLayout.st.css';
 import colors from '../colors.scss';
 
