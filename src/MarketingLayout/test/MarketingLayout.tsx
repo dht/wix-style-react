@@ -23,6 +23,7 @@ function marketingLayoutWithAllProps() {
       title="title"
       description="description"
       badge={<Badge size="small">badge</Badge>}
+      hiddenBadge
     />
   );
 }
