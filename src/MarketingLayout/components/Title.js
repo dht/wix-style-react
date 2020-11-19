@@ -10,7 +10,7 @@ const Title = ({ children, appearance }) => (
   <div className={classes.title}>
     {isString(children) ? (
       appearance === SIZES.tiny ? (
-        <div>{children}</div>
+        <div data-hook={MARKETING_LAYOUT_TITLE}>{children}</div>
       ) : (
         <Heading dataHook={MARKETING_LAYOUT_TITLE} appearance={appearance}>
           {children}
