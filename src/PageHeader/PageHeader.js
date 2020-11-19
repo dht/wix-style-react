@@ -132,7 +132,7 @@ export default class PageHeader extends React.PureComponent {
               !breadcrumbsExists,
               <div
                 className={st(classes.breadcrumbsContainer, {
-                  absolute: !breadcrumbsExists,
+                  withoutBreadcrumbs: !breadcrumbsExists,
                 })}
                 data-hook={dataHooks.breadcrumbs}
               >

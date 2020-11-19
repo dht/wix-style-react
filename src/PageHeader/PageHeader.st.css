@@ -23,7 +23,7 @@
 }
 
 .breadcrumbsContainer {
-  -st-states: absolute;
+  -st-states: withoutBreadcrumbs;
   margin-left: -10px;
 }
 
@@ -32,7 +32,7 @@
   margin-right: -10px;
 }
 
-.breadcrumbsContainer:absolute {
+.breadcrumbsContainer:withoutBreadcrumbs {
   position: absolute;
 }
 
