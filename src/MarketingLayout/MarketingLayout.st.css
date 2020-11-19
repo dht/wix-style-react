@@ -1,28 +1,33 @@
+:import {
+  -st-from: '../Foundation/stylable/spacing.st.css';
+  -st-named: SP4;
+}
+
 .root {
-  -st-states: size(enum(small, medium, large)), inverted, withActions, withImageBackground;
+  -st-states: size(enum(small, medium, large)), inverted, direction(enum(horizontal, vertical)), withActions, withImageBackground;
   padding: 30px;
 }
 
-.root:size(small) {
+.root:size(small):direction(horizontal) {
   padding-left: 48px;
 }
-:global([dir="rtl"]) .root:size(small) {
+:global([dir="rtl"]) .root:size(small):direction(horizontal) {
   padding-left: 30px;
   padding-right: 48px;
 }
 
-.root:size(medium) {
+.root:size(medium):direction(horizontal) {
   padding-left: 48px;
 }
-:global([dir="rtl"]) .root:size(medium) {
+:global([dir="rtl"]) .root:size(medium):direction(horizontal) {
   padding-left: 30px;
   padding-right: 48px;
 }
 
-.root:size(large) {
+.root:size(large):direction(horizontal) {
   padding-left: 60px;
 }
-:global([dir="rtl"]) .root:size(large) {
+:global([dir="rtl"]) .root:size(large):direction(horizontal) {
   padding-left: 30px;
   padding-right: 60px;
 }
@@ -32,6 +37,10 @@
 }
 :global([dir="rtl"]) .root:inverted {
   padding-right: 30px;
+}
+
+.verticalLayout {
+  flex-direction: column;
 }
 
 .contentContainer {
@@ -44,7 +53,7 @@
 .root:inverted:withImageBackground .contentContainer {
   padding-left: 30px;
 }
-:global([dir="rtl"]) .root:inverted:withImageBackground .contentContainer {
+:global([dir="rtl"]) .root:inverted:withImageBackground:direction(horizontal) .contentContainer {
   padding-left: 0;
   padding-right: 30px;
 }
@@ -91,4 +100,8 @@
   top: -30px;
   width: calc(100% + 60px);
   height: calc(100% + 60px);
+}
+
+.spacerRow {
+  height: value(SP4);
 }

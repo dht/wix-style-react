@@ -19,6 +19,7 @@ import {
   sizeSmall,
   sizeMedium,
   sizeLarge,
+  directionVertical,
   inverted,
   imageBackgroundColor,
   advanced,
@@ -82,6 +83,16 @@ export default {
           code({
             compact: true,
             source: sizeLarge,
+          }),
+
+          description({
+            title: 'Direction',
+            text:
+              'The direction of the layout can be horizontal (default) or vertical.',
+          }),
+          code({
+            compact: true,
+            source: directionVertical,
           }),
 
           description({

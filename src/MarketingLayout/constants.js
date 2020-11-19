@@ -3,3 +3,8 @@ export const SIZES = {
   medium: 'medium',
   large: 'large',
 };
+
+export const DIRECTIONS = {
+  horizontal: 'horizontal',
+  vertical: 'vertical',
+};
