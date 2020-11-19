@@ -32,15 +32,15 @@ import CardFolderTabs from '../src/CardFolderTabs';
 export default {
   Animate: {
     props: {
-      id: 0,
-      skin: 'general',
-      text: 'Badge 1',
+      children: <div />,
     },
   },
 
   BadgeSelectItem: {
     props: {
-      children: <div />,
+      id: 0,
+      skin: 'general',
+      text: 'Badge 1',
     },
   },
 
