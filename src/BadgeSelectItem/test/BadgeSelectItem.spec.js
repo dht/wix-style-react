@@ -1,5 +1,5 @@
 import React from 'react';
-import { default as BadgeSelectItem } from '../BadgeSelectItemBuilder';
+import BadgeSelectItem from '../BadgeSelectItem';
 import { SKINS } from '../constants';
 import { cleanup, createRendererWithUniDriver } from '../../../test/utils/unit';
 

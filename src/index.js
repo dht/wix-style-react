@@ -48,7 +48,7 @@ export { default as BadgeSelect } from './BadgeSelect';
 export {
   default as BadgeSelectItem,
   badgeSelectItemBuilder,
-} from './BadgeSelectItemBuilder';
+} from './BadgeSelectItem';
 export { contactItemBuilder } from './ContactItemBuilder';
 export { default as EditableSelector } from './EditableSelector';
 export { default as Card } from './Card';

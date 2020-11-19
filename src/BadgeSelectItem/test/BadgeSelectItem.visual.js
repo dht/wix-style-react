@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import BadgeSelectItem, {
-  badgeSelectItemBuilder,
-} from '../BadgeSelectItemBuilder';
+import BadgeSelectItem, { badgeSelectItemBuilder } from '../BadgeSelectItem';
 import { SKINS } from '../constants';
 import DropdownLayout from '../../DropdownLayout';
 
