@@ -60,7 +60,7 @@ class MarketingLayout extends React.PureComponent {
 
   static defaultProps = {
     size: SIZES.small,
-    alignItems: ALIGNMENTS.center,
+    alignItems: 'center',
     inverted: false,
   };
 
