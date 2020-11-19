@@ -27,11 +27,6 @@
   margin-left: -10px;
 }
 
-:global([dir='rtl']) .breadcrumbsContainer {
-  margin-left: 0;
-  margin-right: -10px;
-}
-
 .breadcrumbsContainer:withoutBreadcrumbs {
   position: absolute;
 }
@@ -52,10 +47,6 @@
   z-index: 1;
   width: 36px;
   height: 36px;
-}
-
-:global([dir='rtl']) .titleContainer .backButtonWrapper {
-  right: -12px;
 }
 
 .titleContainer .backButtonWrapper .backButton {
@@ -92,11 +83,6 @@
   left: -1px;
 }
 
-:global([dir='rtl']) .titleContainer .backButtonWrapper .backButtonIcon {
-  transform: scaleX(-1);
-  right: -1px;
-}
-
 .titleContainer .titleColumn {
   /* Allow flex-child to shrink when there is a truncated descendant
   See: https://css-tricks.com/flexbox-truncated-text/#article-header-id-3 */
@@ -120,4 +106,18 @@
 
 .actionsBar:minimized {
   margin-top: -3px;
+}
+
+:global([dir='rtl']) .breadcrumbsContainer {
+  margin-left: 0;
+  margin-right: -10px;
+}
+
+:global([dir='rtl']) .titleContainer .backButtonWrapper {
+  right: -12px;
+}
+
+:global([dir='rtl']) .titleContainer .backButtonWrapper .backButtonIcon {
+  transform: scaleX(-1);
+  right: -1px;
 }
