@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import BadgeOption, { badgeSelectItemBuilder } from '../BadgeSelectItemBuilder';
-import Box from '../../Box';
+import BadgeSelectItem, {
+  badgeSelectItemBuilder,
+} from '../BadgeSelectItemBuilder';
 import { SKINS } from '../constants';
 import DropdownLayout from '../../DropdownLayout';
 
@@ -76,11 +77,7 @@ tests.forEach(({ describe, its }) => {
   its.forEach(({ it, props }) => {
     storiesOf(`BadgeOption${describe ? '/' + describe : ''}`, module).add(
       it,
-      () => (
-        <Box>
-          <BadgeOption {...props} />
-        </Box>
-      ),
+      () => <BadgeSelectItem {...props} />,
     );
   });
 });
