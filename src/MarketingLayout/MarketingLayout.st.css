@@ -27,11 +27,7 @@
   padding-right: 60px;
 }
 
-.root:badge {
-  position: relative;
-  padding-top: 36px;
-}
-
+.root:badge,
 .root:hiddenBadge {
   position: relative;
   padding-top: 36px;
