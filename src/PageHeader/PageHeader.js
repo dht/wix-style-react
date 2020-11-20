@@ -140,26 +140,21 @@ export default class PageHeader extends React.PureComponent {
               </div>,
             )}
           </div>
-          <div
-            className={st(classes.titleContainer, {
-              minimized,
-              darkTheme: isDarkTheme(hasBackgroundImage, minimized),
-            })}
-          >
+          <div className={st(classes.titleContainer, { minimized })}>
             {showBackButton &&
               onBackClicked &&
               this._animateComponent(
                 !minimized,
                 !breadcrumbsExists,
-                <div className={classes.backButtonWrapper}>
-                  <IconButton
-                    className={classes.backButton}
-                    dataHook={dataHooks.backButton}
-                    onClick={onBackClicked}
-                  >
-                    <ChevronLeft className={classes.backButtonIcon} />
-                  </IconButton>
-                </div>,
+                <IconButton
+                  className={st(classes.titleBackButton, {
+                    darkTheme: isDarkTheme(hasBackgroundImage, minimized),
+                  })}
+                  dataHook={dataHooks.backButton}
+                  onClick={onBackClicked}
+                >
+                  <ChevronLeft className={classes.titleBackButtonIcon} />
+                </IconButton>,
               )}
             <div className={classes.titleColumn}>
               {title &&
